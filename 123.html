@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя веб-сторінка</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        button {
+            background-color: #008CBA;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #00698C;
+            color: white;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        a {
+            color: #008CBA;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        input[type="email"] {
+            padding: 10px;
+            margin: 5px 0;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+    <script>
+        function exitSite() {
+            window.location.href = "https://www.google.com";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Логотип">
+        <h1>Моя сторінка</h1>
+        <button onclick="exitSite()">Кнопка</button>
+    </header>
+    <section>
+        <h2>Луцишин Іван</h2>
+        <img src="myphoto.jpg" alt="Фото">
+        <a href="https://github.com/IvAn12-133/my-first-project" target="_blank">Мій проект на GitHub</a>
+        <form>
+            <label for="email">Електронна пошта:</label>
+            <input type="email" id="email" name="email">
+            <input type="submit" value="Відправити">
+        </form>
+    </section>
+    <footer>
+        <p>Контактна інформація: ilutsyshyn14@zcollage.com.ua</p>
+    </footer>
+</body>
+</html>
